@@ -11,6 +11,7 @@ public class SSALTypeAuthoring : MonoBehaviour
         {
             var entity = GetEntity(TransformUsageFlags.None);
             AddComponent(entity, new SSALType { Type = authoring.Type });
+            // 머지할까요?
         }
     }
 }

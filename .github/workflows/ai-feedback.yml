@@ -1,21 +1,24 @@
-name: AI Feedback on Push
-
-on:
-  push:
-    branches:
-      - main
-      - dev
-      - develop
-
-permissions:
-  contents: write
-
 jobs:
   call-ai-feedback:
-    uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-push-feedback.yml@main
-    with:
-      target_branches: '["main","dev","develop"]'
-      max_files: 10
-      max_patch_chars: 4000
-    secrets:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check commit messages
+        id: check
+        run: |
+          for msg in $(jq -r '.commits[].message' <<< '${{ toJson(github.event) }}'); do
+            if [[ "$msg" == \[AI\]* ]]; then
+              echo "found=true" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          done
+          echo "found=false" >> $GITHUB_OUTPUT
+
+      - name: Call reusable workflow
+        if: steps.check.outputs.found == 'true'
+        uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-push-feedback.yml@main
+        with:
+          target_branches: '["main","dev","develop"]'
+          max_files: 10
+          max_patch_chars: 4000
+        secrets:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

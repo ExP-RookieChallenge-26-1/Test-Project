@@ -1,3 +1,15 @@
+name: AI Feedback on Push
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - develop
+
+permissions:
+  contents: write
+
 jobs:
   collect-ai-commits:
     runs-on: ubuntu-latest
@@ -14,6 +26,7 @@ jobs:
           import os
 
           event_path = os.environ["GITHUB_EVENT_PATH"]
+
           with open(event_path, "r", encoding="utf-8") as f:
               event = json.load(f)
 
@@ -25,6 +38,9 @@ jobs:
               title = message.splitlines()[0] if message else ""
               sha = commit.get("id", "")
 
+              print(f"[DEBUG] title={title}")
+              print(f"[DEBUG] sha={sha}")
+
               if title.startswith("[AI]"):
                   matched.append(sha)
 
@@ -34,6 +50,9 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
               out.write(f"should_run={should_run}\n")
               out.write(f"filtered_shas={filtered_shas_json}\n")
+
+          print(f"[RESULT] should_run={should_run}")
+          print(f"[RESULT] filtered_shas={filtered_shas_json}")
           PY
 
   call-ai-feedback:

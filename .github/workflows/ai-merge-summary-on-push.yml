@@ -1,0 +1,21 @@
+name: AI Merge Summary On Push
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - develop
+
+permissions:
+  contents: write
+
+jobs:
+  call-merge-summary:
+    uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-merge-summary.yml@main
+    with:
+      target_branches: '["main","dev","develop"]'
+      max_files: 10
+      max_patch_chars: 4000
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

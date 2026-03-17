@@ -9,6 +9,7 @@ public class SSALTypeAuthoring : MonoBehaviour
     {
         public override void Bake(SSALTypeAuthoring authoring)
         {
+// 주석입니다.
             var entity = GetEntity(TransformUsageFlags.None);
             AddComponent(entity, new SSALType { Type = authoring.Type });
         }

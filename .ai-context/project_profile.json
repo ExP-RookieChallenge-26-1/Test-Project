@@ -1,0 +1,277 @@
+{
+  "project_name": "unknown",
+  "language": "C#",
+  "engine_guess": "Unity",
+  "total_cs_files": 21,
+  "mono_behaviour_files": 8,
+  "scriptable_object_files": 0,
+  "files_with_update": 5,
+  "files_with_fixed_update": 0,
+  "files_with_late_update": 0,
+  "singleton_candidates": 0,
+  "manager_like_classes": 8,
+  "ui_related_classes": 8,
+  "save_load_related_classes": 2,
+  "role_counts": {
+    "runtime": 16,
+    "manager": 8,
+    "player": 10,
+    "ui": 8,
+    "data": 10,
+    "save-load": 2,
+    "combat": 2,
+    "inventory": 1,
+    "network": 2
+  },
+  "high_coupling_classes": [
+    {
+      "class_name": "Hand",
+      "file_id": "Hand.cs",
+      "relation_count": 164,
+      "referenced_type_count": 158
+    },
+    {
+      "class_name": "ClickSpawnSystem",
+      "file_id": "SpawnerSystem.cs",
+      "relation_count": 64,
+      "referenced_type_count": 60
+    },
+    {
+      "class_name": "SSALCountSystem",
+      "file_id": "SSALCountSystem.cs",
+      "relation_count": 56,
+      "referenced_type_count": 51
+    },
+    {
+      "class_name": "LifeTimeData",
+      "file_id": "FreezeSystem.cs",
+      "relation_count": 55,
+      "referenced_type_count": 49
+    },
+    {
+      "class_name": "SpawnerManager",
+      "file_id": "SpawnerManager.cs",
+      "relation_count": 43,
+      "referenced_type_count": 42
+    },
+    {
+      "class_name": "SSALCalcSystem",
+      "file_id": "SSALCalcSystem.cs",
+      "relation_count": 41,
+      "referenced_type_count": 37
+    },
+    {
+      "class_name": "SSALIcon",
+      "file_id": "SSALIcon.cs",
+      "relation_count": 38,
+      "referenced_type_count": 35
+    },
+    {
+      "class_name": "TitleMoveEffect",
+      "file_id": "TitleMoveEffect.cs",
+      "relation_count": 34,
+      "referenced_type_count": 31
+    },
+    {
+      "class_name": "MeleeHandLogic",
+      "file_id": "MeleeHandLogic.cs",
+      "relation_count": 32,
+      "referenced_type_count": 30
+    },
+    {
+      "class_name": "Safety2DLockSystem",
+      "file_id": "Safety2DLockSystem.cs",
+      "relation_count": 32,
+      "referenced_type_count": 29
+    }
+  ],
+  "high_risk_classes": [
+    {
+      "file_id": "Hand.cs",
+      "class_name": "Hand",
+      "risk_flags": [
+        "high-coupling",
+        "public-field-heavy",
+        "getcomponent-heavy",
+        "magic-number-heavy",
+        "large-class",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "public 필드 노출 수가 많음",
+        "GetComponent/TryGetComponent 호출이 많음",
+        "숫자 리터럴이 많아 의미 파악이 어려울 수 있음",
+        "파일/메서드/필드 수가 많아 책임이 커질 가능성",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 81
+    },
+    {
+      "file_id": "GageFIre.cs",
+      "class_name": "GageFire",
+      "risk_flags": [
+        "update-heavy",
+        "high-coupling",
+        "init-order-sensitive",
+        "save-load-sensitive",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "Unity 업데이트 루프 사용",
+        "참조 타입 또는 관계 수가 많음",
+        "초기화 순서에 민감할 가능성",
+        "저장/불러오기 관련 로직 포함",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 68
+    },
+    {
+      "file_id": "TitleMoveEffect.cs",
+      "class_name": "TitleMoveEffect",
+      "risk_flags": [
+        "update-heavy",
+        "high-coupling",
+        "init-order-sensitive",
+        "save-load-sensitive",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "Unity 업데이트 루프 사용",
+        "참조 타입 또는 관계 수가 많음",
+        "초기화 순서에 민감할 가능성",
+        "저장/불러오기 관련 로직 포함",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 68
+    },
+    {
+      "file_id": "SSALIcon.cs",
+      "class_name": "SSALIcon",
+      "risk_flags": [
+        "update-heavy",
+        "high-coupling",
+        "public-field-heavy",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "Unity 업데이트 루프 사용",
+        "참조 타입 또는 관계 수가 많음",
+        "public 필드 노출 수가 많음",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 56
+    },
+    {
+      "file_id": "SSALCountSystem.cs",
+      "class_name": "SSALCountSystem",
+      "risk_flags": [
+        "high-coupling",
+        "getcomponent-heavy",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "GetComponent/TryGetComponent 호출이 많음",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 48
+    },
+    {
+      "file_id": "SpawnerManager.cs",
+      "class_name": "SpawnerManager",
+      "risk_flags": [
+        "high-coupling",
+        "public-field-heavy",
+        "init-order-sensitive",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "public 필드 노출 수가 많음",
+        "초기화 순서에 민감할 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 46
+    },
+    {
+      "file_id": "FreezeSystem.cs",
+      "class_name": "LifeTimeData",
+      "risk_flags": [
+        "high-coupling",
+        "magic-number-heavy",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "숫자 리터럴이 많아 의미 파악이 어려울 수 있음",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 44
+    },
+    {
+      "file_id": "SpawnerSystem.cs",
+      "class_name": "ClickSpawnSystem",
+      "risk_flags": [
+        "high-coupling",
+        "magic-number-heavy",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "숫자 리터럴이 많아 의미 파악이 어려울 수 있음",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 44
+    },
+    {
+      "file_id": "SSALCupAuthoring.cs",
+      "class_name": "SSALCupAuthoring",
+      "risk_flags": [
+        "high-coupling",
+        "public-field-heavy",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "public 필드 노출 수가 많음",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 36
+    },
+    {
+      "file_id": "UITriggerSystem.cs",
+      "class_name": "UITriggerSystem",
+      "risk_flags": [
+        "high-coupling",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 36
+    }
+  ],
+  "common_patterns": [
+    "Update 사용 빈도 높음",
+    "Manager 성격 클래스 다수",
+    "고결합 클래스 존재"
+  ]
+}

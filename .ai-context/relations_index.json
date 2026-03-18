@@ -1,0 +1,4972 @@
+[
+  {
+    "from_file": "CalcManager.cs",
+    "from_class": "CalcManager",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "CalcManager.cs",
+    "from_class": "CalcManager",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "CalcManager.cs",
+    "from_class": "CalcManager",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "CalcManager.cs",
+    "from_class": "CalcManager",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Rigidbody2D",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "HideInInspector",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Init",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "InitMovement",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Movement",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "Rigidbody2D",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Character.cs",
+    "from_class": "Character",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "LocalTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SSALCupData",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "IComponentData",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "TriggerUITag",
+    "to_type": "IComponentData",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "TimeFreezeSystem",
+    "to_type": "ISystem",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SSALManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Active",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "AddComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Burst",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "BurstCompile",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "CountSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "CreateCommandBuffer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "CupSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "DeltaTime",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "EndSimulationEntityCommandBufferSystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "GetSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "GetSingletonEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "HasSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "IComponentData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "ISystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "LocalTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Null",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Physics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "PhysicsMass",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "PhysicsVelocity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "PlayerSettings",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Position",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Query",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "RefRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "RefRW",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "RemoveComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Singleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SpawnCenter",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SSALCupData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SSALManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SystemAPI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "SystemState",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "TargetHeightPercent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "UnityEditor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "Value",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "ValueRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "ValueRW",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "WithAll",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "WithEntityAccess",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "FreezeSystem.cs",
+    "from_class": "LifeTimeData",
+    "to_type": "WorldUnmanaged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "RectTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Components",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "FireStep1Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "FireStep2Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "FireStep3Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Gage",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "GageFireImg",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "RectTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Settings",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Shake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "ShakeUI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Slider",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Sprites",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "GageFIre.cs",
+    "from_class": "GageFire",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Player",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SpriteRenderer",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Weapon",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "NotImplementedException",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Vector3",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IObserver",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Add",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Alpha1",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Alpha2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Alpha3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Attack",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "AttackEnd",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "AttackKeyIndex",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "AttackStart",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "AttackType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Charge",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ChargeMeleeWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CheckAttack",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CheckCurrentSlotWeaponParent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CheckFlipData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CheckSlotSwitch",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Clamp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Clothes",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ClothesShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Contains",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CurrentSlotIndex",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "CurrentSlotWeaponType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "DrawStandardWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Enum",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "EnumData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "EnumData.Weapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Euler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Find",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FindWithTag",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FipData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FirstMelee",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FirstRanged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FirstSlot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "FixedRot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Flip",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ForwardToObj",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Gage",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GageMeleeWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetChild",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetKeyDown",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetMouseButton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetMouseButtonDown",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetMouseButtonUp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "GetSlotWeaponType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandAction",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandAngleCorrection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandHealShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandLayer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandLogic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandMaxShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandMoveShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandPrio",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandShakeAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandState",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HandUtil",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HealShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HoldingIndex",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HoldingOrder",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "HoldStandardWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InClothes",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Init",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InitBeforeChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InitCurrentSlotSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InitHoldSlotWeaponSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InitObj",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "InitSetHold",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Input",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IObserver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IsHandFixed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IsImageWidth",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IsReload",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IsRightHandStandard",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "IsSwitchWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "KeyCode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Left",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "LeftArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "LeftWeaponLocation",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Length",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Linq",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Load",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "MaxShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Melee",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "MouseFlipPrio",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "MoveDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "NoneUsed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "NotImplementedException",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "OnNotify",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Parse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Player",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "PlayerMovement",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Quaternion",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Ranged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ReadyStandardWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Renderer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ReturnWeaponToRoot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Right",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "RightArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "RightWeaponLocation",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Scale",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ScreenToWorld2D",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SecondRanged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SecondSlot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Serializable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetActive",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetArmRot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetClothes",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetCurrentSlotWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetCurrentSlotWeaponParent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetFlip",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetHandShake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetHoldSlotWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetHoldSlotWeaponParent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetLeftArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetMain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetParent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetRightArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetSlotWeapons",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SetWeaponData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ShakeAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ShakeClothes",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ShakeHand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ShakeWeaponCorrection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SkipSwingEffect",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Slerp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Slot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SlotChangeKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SlotChangeTo1Key",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SlotChangeTo2Key",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SlotChangeTo3Key",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Space",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SpriteRenderer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Standard",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "StandardHand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Swap",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "SwitchWeapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "ThirdSlot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WaitDraw",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WaitHold",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "Weapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponAngleCorrection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponAttackType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponHoldingLocationRoot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponRoot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponScalePrio",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponSlot",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Hand.cs",
+    "from_class": "Hand",
+    "to_type": "WeaponSwitchTime",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "IObserver",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "EventSystems",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Find",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "FindWithTag",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "HandUtil",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "HeadAction",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "HeadSet",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Init",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "InitObj",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "IObserver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "OnNotify",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Player",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "RimitedForwardToMouse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "Serializable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Head.cs",
+    "from_class": "Head",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "IObserver.cs",
+    "from_class": "IObserver",
+    "to_type": "OnNotify",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Vector3",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "IHandLogic",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "ApplyHandSwap",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Euler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "ForwardToObj",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Hand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "HANDCORRECTANGLE",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "HandLayer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "HandState",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "HandType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "HandUtil",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "IHandLogic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "IsRightHandStandard",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Left",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "MaxAngle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "MinAngle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Quaternion",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Right",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "RimitedForwardToMouse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "SecondHandLocation",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "SetLeftArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "SetRightArm",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "SpriteRenderer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MeleeHandLogic.cs",
+    "from_class": "MeleeHandLogic",
+    "to_type": "Weapon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Movement",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Drag",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "InitFirst",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Lerp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "MoveAction",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "MoveDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Movement",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "MoveSpeed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "SetCharacterDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "MonsterMovement.cs",
+    "from_class": "MonsterMovement",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "SafetyLockJob",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "SafetyLockJob",
+    "to_type": "IJobEntity",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "ISystem",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Angular",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Burst",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "BurstCompile",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Epsilon",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Execute",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "FixedStepSimulationSystemGroup",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "float4",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "IJobEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "InverseInertia",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "ISystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Linear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Physics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "PhysicsMass",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "PhysicsSystemGroup",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "PhysicsVelocity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Position",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Rotation",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Schedule",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "ScheduleParallel",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Systems",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "SystemState",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "UpdateAfter",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Safety2DLockSystem.cs",
+    "from_class": "Safety2DLockSystem",
+    "to_type": "UpdateInGroup",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "IComponentData",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Count",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "float2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "IComponentData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Prefab",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "SpawnRange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "Spawner.cs",
+    "from_class": "Spawner",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Singleton",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "CalculateEntityCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "ContextMenu",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "CreateEntityQuery",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "CurrentMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Default",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "DefaultGameObjectInjectionWorld",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "EntityManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "EntityQuery",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "ETC",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "GetComponentData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "GetSingletonEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Grain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "GrainAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "GrainSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "OdinInspector",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "ReadOnly",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Rice",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "RiceAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "RiceSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Sand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SandAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SandSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SetComponentData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SetGrainMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SetMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SetRiceMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SetSandMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Singleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Sirenix",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SpawnAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SpawnerData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SpawnerSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "StageData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "UNITY_EDITOR",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerManager.cs",
+    "from_class": "SpawnerManager",
+    "to_type": "World",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Vector3",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SystemBase",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SSALManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Active",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "AddComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Allocator",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "CurrentMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "DeltaTime",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Dispose",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "EntityManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Euler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "FromPositionRotation",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "GetRandomPrefab",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "GetSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Grain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Grain1Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Grain2Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Grain3Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "HasSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "InputSystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Instantiate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "LifeTimeData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Mouse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Null",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Playback",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "ReadValue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Rice",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Rice1Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Rice2Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Rice3Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Sand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Sand1Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Sand2Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Sand3Entity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "ScreenToWorldPoint",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SpawnAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SpawnCenter",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SpawnerData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SpawnSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SSALCupData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SSALManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SystemAPI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "SystemBase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Temp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Value",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SpawnerSystem.cs",
+    "from_class": "ClickSpawnSystem",
+    "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SSALCupData",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SystemBase",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SpawnerManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "CalculateResult",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "CountSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "float[,]",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "float3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "GetSingletonEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Grain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "GrainSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "HasSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Position",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Query",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "RefRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Rice",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "RiceSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Sand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SandSetting",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SpawnAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SpawnerData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SpawnerManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SSALCupData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SSALType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SystemAPI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "SystemBase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Type",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "ValueRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCalcSystem.cs",
+    "from_class": "SSALCalcSystem",
+    "to_type": "WithAll",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALCupData",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SystemBase",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Active",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Allocator",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "ClearZone",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "CountSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "DeltaTime",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "DestroyEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Dispose",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "EntityManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "float3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Get",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "GetSingletonEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Grain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "GrainCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "HasSingleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "LocalTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Log",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Playback",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Position",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Query",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "RefRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Rice",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "RiceCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Sand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SandCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SetSSALAmountTxt",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALCupData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SSALType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SystemAPI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "SystemBase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Temp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Type",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "UIDefault",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "UIManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "ValueRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "WithAll",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCountSystem.cs",
+    "from_class": "SSALCountSystem",
+    "to_type": "WithEntityAccess",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupData",
+    "to_type": "IComponentData",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "Baker",
+    "to_type": "Baker",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "AddComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "Bake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "BottomTierCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "CountSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "CupSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "CutlineY",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "Dynamic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "float2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "float3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "GetChild",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "GetEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "GrainCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "IComponentData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "Mathematics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "RiceCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "SandCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "SpawnCenter",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "SpawnSize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "TopTierCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "TransformUsageFlags",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALCupAuthoring.cs",
+    "from_class": "SSALCupAuthoring",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SsalEntityData.cs",
+    "from_class": "SsalEntityData",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SsalEntityData.cs",
+    "from_class": "SsalEntityData",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SsalEntityData.cs",
+    "from_class": "SsalEntityData",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SsalEntityData.cs",
+    "from_class": "SsalEntityData",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Vector3",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SpawnerManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Clamp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Color",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "CurrentMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Default",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "DefaultSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Euler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Grain",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "GrainDropSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "GrainSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "InputSystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Lerp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Mouse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Quaternion",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "ReadValue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Rice",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "RiceDropSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "RiceSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Sand",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SandDropSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SandSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "ScreenToWorldPoint",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SpawnerArea",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SpawnerManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SpriteRenderer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SSALIconObj",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALIcon.cs",
+    "from_class": "SSALIcon",
+    "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "Baker",
+    "to_type": "Baker",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "AddComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "Bake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "GetEntity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "SSALMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "SSALType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "TransformUsageFlags",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "Type",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "SSALTypeAuthoring.cs",
+    "from_class": "SSALTypeAuthoring",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "RectTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Vector2",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Append",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "CanvasGroup",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "DG",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "DOAnchorPos",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "DOFade",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "DOScale",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "DOTween",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Ease",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "InOutSine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "InputSystem",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "IsPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Join",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Kill",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Mouse",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "MoveToTarget",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "OnComplete",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "OutQuint",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "RectTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Sequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "SetEase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "SetLoops",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "StartFloating",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Tweening",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TitleMoveEffect.cs",
+    "from_class": "TitleMoveEffect",
+    "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SystemBase",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SSALManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Allocator",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Dispose",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Entities",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "EntityCommandBuffer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "EntityManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "OnUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Playback",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Query",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "RefRO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "RemoveComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SetSubmitUI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SSALManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SystemAPI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "SystemBase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Temp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "TriggerUITag",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "UITriggerSystem.cs",
+    "from_class": "UITriggerSystem",
+    "to_type": "WithEntityAccess",
+    "relation_type": "uses",
+    "strength": 1
+  }
+]

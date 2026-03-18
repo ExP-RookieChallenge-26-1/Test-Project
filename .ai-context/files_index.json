@@ -1,0 +1,3261 @@
+[
+  {
+    "file_id": "CalcManager.cs",
+    "path": "CalcManager.cs",
+    "file_name": "CalcManager.cs",
+    "content_hash": "05004a1469fa9b00fbb7adf5afc96827203d6b60",
+    "size": 282,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "CalcManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "CalcManager",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime",
+      "manager"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재"
+    ]
+  },
+  {
+    "file_id": "Character.cs",
+    "path": "Character.cs",
+    "file_name": "Character.cs",
+    "content_hash": "a747b89bbb997e41cc03bf0c8e87a1cf8a21413c",
+    "size": 369,
+    "line_count": 16,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Character",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Character",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Init"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "HideInInspector",
+      "Movement",
+      "Init",
+      "InitMovement",
+      "GetComponent",
+      "Rigidbody2D"
+    ],
+    "component_access_types": [
+      "Rigidbody2D"
+    ],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "player",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "FreezeSystem.cs",
+    "path": "FreezeSystem.cs",
+    "file_name": "FreezeSystem.cs",
+    "content_hash": "160effef0ab7c8e7882bb50f122b1537e415f6a5",
+    "size": 2663,
+    "line_count": 72,
+    "namespace": "",
+    "using_list": [
+      "Unity.Burst",
+      "Unity.Entities",
+      "Unity.Mathematics",
+      "Unity.Physics",
+      "Unity.Transforms",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "LifeTimeData",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "IComponentData"
+        ],
+        "interfaces": [
+          "IComponentData"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "TriggerUITag",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "IComponentData"
+        ],
+        "interfaces": [
+          "IComponentData"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "TimeFreezeSystem",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "ISystem"
+        ],
+        "interfaces": [
+          "ISystem"
+        ],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "LifeTimeData",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate"
+    ],
+    "fields": [
+      {
+        "name": "Value",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "TargetHeightPercent",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "dt",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "targetY",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "cupTopY",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "cupEntity",
+        "type": "Entity",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "xMin",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "xMax",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "xPadding",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 1,
+    "get_component_count": 2,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float",
+      "Entity",
+      "Unity",
+      "Burst",
+      "Entities",
+      "Mathematics",
+      "Physics",
+      "Transforms",
+      "UnityEngine",
+      "UnityEditor",
+      "PlayerSettings",
+      "IComponentData",
+      "Value",
+      "BurstCompile",
+      "ISystem",
+      "TargetHeightPercent",
+      "OnUpdate",
+      "SystemState",
+      "SSALManager",
+      "Instance",
+      "Active",
+      "SystemAPI",
+      "DeltaTime",
+      "GetSingleton",
+      "EndSimulationEntityCommandBufferSystem",
+      "Singleton",
+      "CreateCommandBuffer",
+      "WorldUnmanaged",
+      "Null",
+      "HasSingleton",
+      "SSALCupData",
+      "GetSingletonEntity",
+      "GetComponent",
+      "LocalTransform",
+      "Position",
+      "CupSize",
+      "SpawnCenter",
+      "CountSize",
+      "Query",
+      "RefRW",
+      "RefRO",
+      "WithAll",
+      "PhysicsVelocity",
+      "WithEntityAccess",
+      "ValueRO",
+      "ValueRW",
+      "RemoveComponent",
+      "PhysicsMass",
+      "AddComponent"
+    ],
+    "component_access_types": [
+      "SSALCupData",
+      "LocalTransform"
+    ],
+    "created_types": [],
+    "singleton_access_types": [
+      "SSALManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      50,
+      50,
+      9999,
+      0.5,
+      100,
+      5,
+      1,
+      2,
+      0.3
+    ],
+    "guessed_roles": [
+      "player",
+      "manager",
+      "ui",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "GageFIre.cs",
+    "path": "GageFIre.cs",
+    "file_name": "GageFIre.cs",
+    "content_hash": "92fb340f02b96eac6ef1244e07016ed9d6e21b36",
+    "size": 1562,
+    "line_count": 57,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "GageFire",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GageFire",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update",
+      "ShakeUI"
+    ],
+    "fields": [
+      {
+        "name": "rectTransform",
+        "type": "RectTransform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "originalPosition",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "randomOffset",
+        "type": "Vector2",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "RectTransform",
+      "Vector2",
+      "UnityEngine",
+      "UI",
+      "Components",
+      "Image",
+      "GageFireImg",
+      "Slider",
+      "Gage",
+      "Sprites",
+      "Sprite",
+      "FireStep1Sprite",
+      "FireStep2Sprite",
+      "FireStep3Sprite",
+      "Shake",
+      "Settings",
+      "Start",
+      "GetComponent",
+      "Update",
+      "ShakeUI"
+    ],
+    "component_access_types": [
+      "RectTransform"
+    ],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "UI Components",
+      "Sprites",
+      "Shake Settings"
+    ],
+    "numeric_literals": [
+      2,
+      5,
+      0.8,
+      0.5
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "Hand.cs",
+    "path": "Hand.cs",
+    "file_name": "Hand.cs",
+    "content_hash": "b407302d820cc1e6639d75ef7f155ad5a86421e7",
+    "size": 24514,
+    "line_count": 673,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "System.Collections",
+      "System.Collections.Generic",
+      "System.Linq",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Hand",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "IObserver"
+        ],
+        "interfaces": [
+          "IObserver"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Hand",
+    "unity_type": "None",
+    "methods": [
+      "OnNotify",
+      "Init",
+      "InitObj",
+      "SetWeaponData",
+      "SetSlotWeapons",
+      "SetClothes",
+      "ShakeClothes",
+      "SetHandShake",
+      "ShakeHand",
+      "CheckFlipData",
+      "SetFlip",
+      "Vector3",
+      "SetArmRot",
+      "CheckSlotSwitch",
+      "SwitchWeapon",
+      "HoldStandardWeapon",
+      "WaitHold",
+      "DrawStandardWeapon",
+      "WaitDraw",
+      "ReadyStandardWeapon",
+      "CheckAttack",
+      "SetCurrentSlotWeapon",
+      "CheckCurrentSlotWeaponParent",
+      "SetCurrentSlotWeaponParent",
+      "InitCurrentSlotSetting",
+      "SetHoldSlotWeaponParent",
+      "SetHoldSlotWeapon",
+      "InitHoldSlotWeaponSetting",
+      "ReturnWeaponToRoot",
+      "GetSlotWeaponType",
+      "NotImplementedException"
+    ],
+    "fields": [
+      {
+        "name": "HandAction",
+        "type": "Action",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "AttackKeyIndex",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SlotChangeKey",
+        "type": "KeyCode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SlotChangeTo1Key",
+        "type": "KeyCode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SlotChangeTo2Key",
+        "type": "KeyCode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SlotChangeTo3Key",
+        "type": "KeyCode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "FirstSlot",
+        "type": "EnumData.Weapon",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SecondSlot",
+        "type": "EnumData.Weapon",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ThirdSlot",
+        "type": "EnumData.Weapon",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "CurrentSlotIndex",
+        "type": "WeaponSlot",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "WeaponSwitchTime",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_changeHand",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_mainCamera",
+        "type": "Camera",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_lastWeaponParent",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_leftArm",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_rightArm",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_leftRenderer",
+        "type": "SpriteRenderer",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_rightRenderer",
+        "type": "SpriteRenderer",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_leftWeaponLocation",
+        "type": "Transform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_rightWeaponLocation",
+        "type": "Transform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_player",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_weaponRoot",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_weaponHoldingLocation",
+        "type": "List<Transform>",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_weaponHoldingLocationRoot",
+        "type": "Transform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_clothes",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_movement",
+        "type": "PlayerMovement",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_playerFlip",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_mouseFlip",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_flip",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_isHoldingWeapon",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_switchLeftTargetRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_switchRightTargetRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_switchLeftOriRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_switchRightOriRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_firstLeftTargetRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_firstRightTargetRot",
+        "type": "Quaternion",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_switchProgressTime",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ShakeAmount",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "HandShakeAmount",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "HandMoveShake",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "HandAngleCorrection",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_lastPlayerFlip",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_lastMouseFlip",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 14,
+    "get_component_count": 4,
+    "find_call_count": 0,
+    "new_keyword_count": 8,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "int",
+      "KeyCode",
+      "EnumData.Weapon",
+      "WeaponSlot",
+      "float",
+      "bool",
+      "Camera",
+      "SpriteRenderer",
+      "PlayerMovement",
+      "Quaternion",
+      "System",
+      "Collections",
+      "Generic",
+      "Linq",
+      "UnityEngine",
+      "Weapon",
+      "HandUtil",
+      "Serializable",
+      "IObserver",
+      "Swap",
+      "Melee",
+      "HandType",
+      "Standard",
+      "Left",
+      "Right",
+      "HandLayer",
+      "InClothes",
+      "FirstRanged",
+      "SecondRanged",
+      "FirstMelee",
+      "Player",
+      "Update",
+      "HandAction",
+      "AttackKeyIndex",
+      "SlotChangeKey",
+      "SlotChangeTo1Key",
+      "Alpha1",
+      "SlotChangeTo2Key",
+      "Alpha2",
+      "SlotChangeTo3Key",
+      "Alpha3",
+      "EnumData",
+      "FirstSlot",
+      "SecondSlot",
+      "ThirdSlot",
+      "CurrentSlotIndex",
+      "CurrentSlotWeaponType",
+      "GetSlotWeaponType",
+      "WeaponSwitchTime",
+      "Flip",
+      "IsSwitchWeapon",
+      "Clothes",
+      "ShakeAmount",
+      "HealShake",
+      "MaxShake",
+      "NoneUsed",
+      "HandShakeAmount",
+      "HandHealShake",
+      "HandMoveShake",
+      "HandMaxShake",
+      "HandAngleCorrection",
+      "OnNotify",
+      "Init",
+      "InitObj",
+      "SetWeaponData",
+      "CheckAttack",
+      "CheckSlotSwitch",
+      "SetClothes",
+      "SetHandShake",
+      "CheckFlipData",
+      "CheckCurrentSlotWeaponParent",
+      "SetArmRot",
+      "SetSlotWeapons",
+      "FindWithTag",
+      "Find",
+      "LeftArm",
+      "RightArm",
+      "GetComponent",
+      "LeftWeaponLocation",
+      "RightWeaponLocation",
+      "WeaponRoot",
+      "WeaponHoldingLocationRoot",
+      "Add",
+      "GetChild",
+      "None",
+      "Enum",
+      "Parse",
+      "Length",
+      "Contains",
+      "SetActive",
+      "Renderer",
+      "SetCurrentSlotWeapon",
+      "SetHoldSlotWeapon",
+      "ReturnWeaponToRoot",
+      "Euler",
+      "ShakeClothes",
+      "Clamp",
+      "ShakeHand",
+      "MoveDirection",
+      "MouseFlipPrio",
+      "ScreenToWorld2D",
+      "Input",
+      "SetFlip",
+      "FipData",
+      "Scale",
+      "Vector3",
+      "WeaponScalePrio",
+      "HandState",
+      "StandardHand",
+      "IsImageWidth",
+      "AttackType",
+      "WeaponAttackType",
+      "Charge",
+      "ChargeMeleeWeapon",
+      "SkipSwingEffect",
+      "Gage",
+      "GageMeleeWeapon",
+      "WeaponAngleCorrection",
+      "HandPrio",
+      "HandLogic",
+      "SetLeftArm",
+      "IsHandFixed",
+      "FixedRot",
+      "SetRightArm",
+      "Slot",
+      "GetKeyDown",
+      "SwitchWeapon",
+      "Space",
+      "Load",
+      "ForwardToObj",
+      "HoldingIndex",
+      "InitBeforeChange",
+      "HoldStandardWeapon",
+      "Slerp",
+      "WaitHold",
+      "DrawStandardWeapon",
+      "WaitDraw",
+      "ReadyStandardWeapon",
+      "GetMouseButtonDown",
+      "AttackStart",
+      "GetMouseButton",
+      "IsReload",
+      "Ranged",
+      "ClothesShake",
+      "Attack",
+      "GetMouseButtonUp",
+      "AttackEnd",
+      "SetCurrentSlotWeaponParent",
+      "InitCurrentSlotSetting",
+      "IsRightHandStandard",
+      "SetParent",
+      "ShakeWeaponCorrection",
+      "SetMain",
+      "SetHoldSlotWeaponParent",
+      "HoldingOrder",
+      "InitHoldSlotWeaponSetting",
+      "InitSetHold",
+      "NotImplementedException"
+    ],
+    "component_access_types": [
+      "SpriteRenderer",
+      "Player",
+      "Weapon"
+    ],
+    "created_types": [
+      "Vector3",
+      "NotImplementedException"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Player",
+      "LeftArm",
+      "RightArm",
+      "LeftWeaponLocation",
+      "RightWeaponLocation",
+      "Clothes",
+      "WeaponRoot",
+      "WeaponHoldingLocationRoot"
+    ],
+    "numeric_literals": [
+      2,
+      3,
+      5,
+      2,
+      0.5,
+      15,
+      1,
+      90,
+      4,
+      0,
+      360,
+      8,
+      0.4,
+      0.2
+    ],
+    "guessed_roles": [
+      "player",
+      "ui",
+      "runtime",
+      "combat",
+      "inventory"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "인벤토리 계열 로직 포함",
+      "전투 계열 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "Head.cs",
+    "path": "Head.cs",
+    "file_name": "Head.cs",
+    "content_hash": "222822db9e460ea188874df5f48f6993e8242300",
+    "size": 800,
+    "line_count": 39,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine",
+      "UnityEngine.EventSystems"
+    ],
+    "classes": [
+      {
+        "name": "Head",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "IObserver"
+        ],
+        "interfaces": [
+          "IObserver"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Head",
+    "unity_type": "None",
+    "methods": [
+      "OnNotify",
+      "Init",
+      "InitObj",
+      "HeadSet"
+    ],
+    "fields": [
+      {
+        "name": "HeadAction",
+        "type": "Action",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_player",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_headObj",
+        "type": "GameObject",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_mainCamera",
+        "type": "Camera",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 1,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Camera",
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "EventSystems",
+      "HandUtil",
+      "Serializable",
+      "IObserver",
+      "HeadAction",
+      "OnNotify",
+      "Init",
+      "InitObj",
+      "HeadSet",
+      "FindWithTag",
+      "Player",
+      "Find",
+      "RimitedForwardToMouse"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Player",
+      "Head"
+    ],
+    "numeric_literals": [
+      25,
+      180
+    ],
+    "guessed_roles": [
+      "player",
+      "network"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "IObserver.cs",
+    "path": "IObserver.cs",
+    "file_name": "IObserver.cs",
+    "content_hash": "0ba72e6bf80522ca30625fdbdbbaddd722540581",
+    "size": 64,
+    "line_count": 5,
+    "namespace": "",
+    "using_list": [],
+    "classes": [
+      {
+        "name": "IObserver",
+        "kind": "interface",
+        "access": "public",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "IObserver",
+    "unity_type": "None",
+    "methods": [
+      "OnNotify"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "OnNotify"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "network"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "MeleeHandLogic.cs",
+    "path": "MeleeHandLogic.cs",
+    "file_name": "MeleeHandLogic.cs",
+    "content_hash": "51c3c151d2f3f19a1626a7c21933f4343857c7fa",
+    "size": 2810,
+    "line_count": 78,
+    "namespace": "",
+    "using_list": [
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "MeleeHandLogic",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "IHandLogic"
+        ],
+        "interfaces": [
+          "IHandLogic"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MeleeHandLogic",
+    "unity_type": "None",
+    "methods": [
+      "SetLeftArm",
+      "Vector3",
+      "SetRightArm"
+    ],
+    "fields": [
+      {
+        "name": "HANDCORRECTANGLE",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "rot",
+        "type": "Quaternion",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "weaponData",
+        "type": "var",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "rot",
+        "type": "Quaternion",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "weaponData",
+        "type": "var",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [
+      {
+        "access": "public",
+        "type": "float",
+        "name": "MaxAngle"
+      },
+      {
+        "access": "public",
+        "type": "float",
+        "name": "MinAngle"
+      }
+    ],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 2,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float",
+      "Quaternion",
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "Hand",
+      "HandUtil",
+      "IHandLogic",
+      "HANDCORRECTANGLE",
+      "MaxAngle",
+      "MinAngle",
+      "SetLeftArm",
+      "SpriteRenderer",
+      "Weapon",
+      "Camera",
+      "HandState",
+      "ApplyHandSwap",
+      "HandType",
+      "Left",
+      "IsRightHandStandard",
+      "Entity",
+      "HandLayer",
+      "RimitedForwardToMouse",
+      "ForwardToObj",
+      "SecondHandLocation",
+      "Euler",
+      "Vector3",
+      "SetRightArm",
+      "Right"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Vector3"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Entity"
+    ],
+    "numeric_literals": [
+      90
+    ],
+    "guessed_roles": [
+      "player",
+      "data"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "MonsterMovement.cs",
+    "path": "MonsterMovement.cs",
+    "file_name": "MonsterMovement.cs",
+    "content_hash": "1c65d5720223c1493256391c0705fa4b68d7f4e8",
+    "size": 745,
+    "line_count": 24,
+    "namespace": "",
+    "using_list": [
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "MonsterMovement",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Movement"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MonsterMovement",
+    "unity_type": "None",
+    "methods": [
+      "InitFirst",
+      "SetCharacterDirection"
+    ],
+    "fields": [
+      {
+        "name": "_movement",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Vector2",
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "Movement",
+      "Drag",
+      "InitFirst",
+      "MoveAction",
+      "SetCharacterDirection",
+      "MoveDirection",
+      "Lerp",
+      "MoveSpeed"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      5
+    ],
+    "guessed_roles": [
+      "player"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "Safety2DLockSystem.cs",
+    "path": "Safety2DLockSystem.cs",
+    "file_name": "Safety2DLockSystem.cs",
+    "content_hash": "188b1e80411bce375bd98550170f14211a4118cc",
+    "size": 1819,
+    "line_count": 56,
+    "namespace": "",
+    "using_list": [
+      "Unity.Burst",
+      "Unity.Entities",
+      "Unity.Mathematics",
+      "Unity.Physics",
+      "Unity.Physics.Systems",
+      "Unity.Transforms"
+    ],
+    "classes": [
+      {
+        "name": "Safety2DLockSystem",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "ISystem"
+        ],
+        "interfaces": [
+          "ISystem"
+        ],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      },
+      {
+        "name": "SafetyLockJob",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "IJobEntity"
+        ],
+        "interfaces": [
+          "IJobEntity"
+        ],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Safety2DLockSystem",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate",
+      "SafetyLockJob",
+      "Execute",
+      "quaternion"
+    ],
+    "fields": [
+      {
+        "name": "q",
+        "type": "float4",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float4",
+      "Unity",
+      "Burst",
+      "Entities",
+      "Mathematics",
+      "Physics",
+      "Systems",
+      "Transforms",
+      "UpdateInGroup",
+      "FixedStepSimulationSystemGroup",
+      "UpdateAfter",
+      "PhysicsSystemGroup",
+      "BurstCompile",
+      "ISystem",
+      "OnUpdate",
+      "SystemState",
+      "IJobEntity",
+      "ScheduleParallel",
+      "Schedule",
+      "LocalTransform",
+      "PhysicsVelocity",
+      "PhysicsMass",
+      "Execute",
+      "Position",
+      "Rotation",
+      "Epsilon",
+      "Linear",
+      "Angular",
+      "InverseInertia"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "SafetyLockJob"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      0.001,
+      2,
+      3,
+      1
+    ],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "Spawner.cs",
+    "path": "Spawner.cs",
+    "file_name": "Spawner.cs",
+    "content_hash": "8e9cb4cfa6b9c2461b31c48eecf3a2de37705deb",
+    "size": 174,
+    "line_count": 11,
+    "namespace": "",
+    "using_list": [
+      "Unity.Entities",
+      "Unity.Mathematics"
+    ],
+    "classes": [
+      {
+        "name": "Spawner",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "IComponentData"
+        ],
+        "interfaces": [
+          "IComponentData"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Spawner",
+    "unity_type": "None",
+    "methods": [],
+    "fields": [
+      {
+        "name": "Prefab",
+        "type": "Entity",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "Count",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SpawnRange",
+        "type": "float2",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 3,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Entity",
+      "int",
+      "float2",
+      "Unity",
+      "Entities",
+      "Mathematics",
+      "IComponentData",
+      "Prefab",
+      "Count",
+      "SpawnRange"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "data"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "SpawnerManager.cs",
+    "path": "SpawnerManager.cs",
+    "file_name": "SpawnerManager.cs",
+    "content_hash": "269dfaf4fe55190a6a0f08f3aea86e59f4babfe6",
+    "size": 1997,
+    "line_count": 72,
+    "namespace": "",
+    "using_list": [
+      "Sirenix.OdinInspector",
+      "Unity.Entities",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "SpawnerManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SpawnerManager",
+    "unity_type": "None",
+    "methods": [
+      "Start",
+      "SetRiceMode",
+      "SetSandMode",
+      "SetGrainMode",
+      "SetMode"
+    ],
+    "fields": [
+      {
+        "name": "RiceSetting",
+        "type": "SpawnerSetting",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SandSetting",
+        "type": "SpawnerSetting",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "GrainSetting",
+        "type": "SpawnerSetting",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "CurrentMode",
+        "type": "SSALMode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_entityManager",
+        "type": "EntityManager",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "setting",
+        "type": "SpawnerSetting",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "spawnAmount",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 4,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "SpawnerSetting",
+      "SSALMode",
+      "EntityManager",
+      "int",
+      "Sirenix",
+      "OdinInspector",
+      "Unity",
+      "Entities",
+      "UnityEngine",
+      "Singleton",
+      "RiceSetting",
+      "SandSetting",
+      "GrainSetting",
+      "ReadOnly",
+      "CurrentMode",
+      "Start",
+      "Default",
+      "World",
+      "DefaultGameObjectInjectionWorld",
+      "UNITY_EDITOR",
+      "ContextMenu",
+      "Rice",
+      "SetRiceMode",
+      "SetMode",
+      "Sand",
+      "SetSandMode",
+      "Grain",
+      "SetGrainMode",
+      "EntityQuery",
+      "CreateEntityQuery",
+      "SpawnerData",
+      "CalculateEntityCount",
+      "Entity",
+      "GetSingletonEntity",
+      "GetComponentData",
+      "StageData",
+      "ETC",
+      "RiceAmount",
+      "SandAmount",
+      "GrainAmount",
+      "SpawnAmount",
+      "SetComponentData"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Rice",
+      "Sand",
+      "Grain"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "manager",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "SpawnerSystem.cs",
+    "path": "SpawnerSystem.cs",
+    "file_name": "SpawnerSystem.cs",
+    "content_hash": "234d7700cab5b85dbb6c825b97ca20fe107847a8",
+    "size": 3351,
+    "line_count": 83,
+    "namespace": "",
+    "using_list": [
+      "Unity.Entities",
+      "Unity.Mathematics",
+      "Unity.Transforms",
+      "UnityEngine",
+      "UnityEngine.InputSystem",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "ClickSpawnSystem",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "SystemBase"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ClickSpawnSystem",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate",
+      "EntityCommandBuffer",
+      "Vector3",
+      "float3",
+      "GetRandomPrefab"
+    ],
+    "fields": [
+      {
+        "name": "timer",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "mouse",
+        "type": "var",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "spawnInterval",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "randomOffset",
+        "type": "Vector2",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 3,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float",
+      "Vector2",
+      "Unity",
+      "Entities",
+      "Mathematics",
+      "Transforms",
+      "UnityEngine",
+      "InputSystem",
+      "UI",
+      "SystemBase",
+      "OnUpdate",
+      "SSALManager",
+      "Instance",
+      "Active",
+      "SystemAPI",
+      "HasSingleton",
+      "SpawnerData",
+      "SSALCupData",
+      "Mouse",
+      "Camera",
+      "GetSingleton",
+      "DeltaTime",
+      "SpawnAmount",
+      "EntityCommandBuffer",
+      "Collections",
+      "Allocator",
+      "Temp",
+      "ReadValue",
+      "Vector3",
+      "ScreenToWorldPoint",
+      "SpawnCenter",
+      "SpawnSize",
+      "Euler",
+      "Entity",
+      "GetRandomPrefab",
+      "Null",
+      "Instantiate",
+      "SetComponent",
+      "LocalTransform",
+      "FromPositionRotation",
+      "AddComponent",
+      "LifeTimeData",
+      "Value",
+      "Playback",
+      "EntityManager",
+      "Dispose",
+      "CurrentMode",
+      "SSALMode",
+      "Rice",
+      "Rice1Entity",
+      "Rice2Entity",
+      "Rice3Entity",
+      "Sand",
+      "Sand1Entity",
+      "Sand2Entity",
+      "Sand3Entity",
+      "Grain",
+      "Grain1Entity",
+      "Grain2Entity",
+      "Grain3Entity"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "EntityCommandBuffer",
+      "Vector3"
+    ],
+    "singleton_access_types": [
+      "SSALManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      1,
+      2,
+      0,
+      360,
+      5,
+      3
+    ],
+    "guessed_roles": [
+      "manager",
+      "ui",
+      "player",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "SSALCalcSystem.cs",
+    "path": "SSALCalcSystem.cs",
+    "file_name": "SSALCalcSystem.cs",
+    "content_hash": "7adda84bc024fbf2ae39f7ca8124319fadb3881c",
+    "size": 2706,
+    "line_count": 80,
+    "namespace": "",
+    "using_list": [
+      "Unity.Entities",
+      "Unity.Transforms",
+      "Unity.Mathematics",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "SSALCalcSystem",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "SystemBase"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SSALCalcSystem",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate",
+      "CalculateResult"
+    ],
+    "fields": [
+      {
+        "name": "result",
+        "type": "float[,]",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "highestY",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "pos",
+        "type": "float3",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "pileHeight",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "pos",
+        "type": "float3",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "tierIdx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "typeIdx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 2,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float[,]",
+      "float",
+      "float3",
+      "int",
+      "Unity",
+      "Entities",
+      "Transforms",
+      "Mathematics",
+      "UnityEngine",
+      "SystemBase",
+      "OnUpdate",
+      "CalculateResult",
+      "SystemAPI",
+      "HasSingleton",
+      "SSALCupData",
+      "GetSingletonEntity",
+      "GetComponent",
+      "LocalTransform",
+      "Position",
+      "CountSize",
+      "Query",
+      "RefRO",
+      "WithAll",
+      "SSALType",
+      "ValueRO",
+      "Type",
+      "SSALMode",
+      "Rice",
+      "Grain",
+      "Sand",
+      "SpawnerData",
+      "SpawnerManager",
+      "Instance",
+      "RiceSetting",
+      "SpawnAmount",
+      "GrainSetting",
+      "SandSetting"
+    ],
+    "component_access_types": [
+      "SSALCupData",
+      "LocalTransform"
+    ],
+    "created_types": [],
+    "singleton_access_types": [
+      "SpawnerManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      2,
+      3,
+      100
+    ],
+    "guessed_roles": [
+      "manager",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "SSALCountSystem.cs",
+    "path": "SSALCountSystem.cs",
+    "file_name": "SSALCountSystem.cs",
+    "content_hash": "bdbcf6bd63ce24061663f2175861ab6860e90bf0",
+    "size": 3402,
+    "line_count": 102,
+    "namespace": "",
+    "using_list": [
+      "Unity.Entities",
+      "Unity.Mathematics",
+      "Unity.Transforms",
+      "UnityEngine",
+      "Unity.Collections"
+    ],
+    "classes": [
+      {
+        "name": "SSALCountSystem",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "SystemBase"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SSALCountSystem",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate",
+      "ClearZone",
+      "EntityCommandBuffer"
+    ],
+    "fields": [
+      {
+        "name": "timer",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "rice",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "pos",
+        "type": "float3",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "padding",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "pos",
+        "type": "float3",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 4,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float",
+      "int",
+      "float3",
+      "Unity",
+      "Entities",
+      "Mathematics",
+      "Transforms",
+      "UnityEngine",
+      "Collections",
+      "SystemBase",
+      "OnUpdate",
+      "SSALManager",
+      "Instance",
+      "Active",
+      "SystemAPI",
+      "DeltaTime",
+      "HasSingleton",
+      "SSALCupData",
+      "GetSingletonEntity",
+      "GetComponent",
+      "LocalTransform",
+      "Position",
+      "CountSize",
+      "Query",
+      "RefRO",
+      "SSALType",
+      "ValueRO",
+      "Type",
+      "SSALMode",
+      "Rice",
+      "Sand",
+      "Grain",
+      "RiceCount",
+      "SandCount",
+      "GrainCount",
+      "Log",
+      "UIManager",
+      "Get",
+      "UIDefault",
+      "SetSSALAmountTxt",
+      "SetComponent",
+      "ClearZone",
+      "EntityCommandBuffer",
+      "Allocator",
+      "Temp",
+      "WithAll",
+      "WithEntityAccess",
+      "DestroyEntity",
+      "Playback",
+      "EntityManager",
+      "Dispose"
+    ],
+    "component_access_types": [
+      "SSALCupData",
+      "LocalTransform"
+    ],
+    "created_types": [
+      "EntityCommandBuffer"
+    ],
+    "singleton_access_types": [
+      "SSALManager"
+    ],
+    "string_literals": [
+      "rice {rice} sand {sand} grain {grain}"
+    ],
+    "numeric_literals": [
+      0.1,
+      2,
+      0.07
+    ],
+    "guessed_roles": [
+      "manager",
+      "ui",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "SSALCupAuthoring.cs",
+    "path": "SSALCupAuthoring.cs",
+    "file_name": "SSALCupAuthoring.cs",
+    "content_hash": "ddf548d8c8187fea6c98174ce6b09b41630b8bf7",
+    "size": 1552,
+    "line_count": 56,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "Unity.Entities",
+      "Unity.Mathematics"
+    ],
+    "classes": [
+      {
+        "name": "SSALCupAuthoring",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "Baker",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "Baker"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "SSALCupData",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [
+          "IComponentData"
+        ],
+        "interfaces": [
+          "IComponentData"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SSALCupAuthoring",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Bake",
+      "float2"
+    ],
+    "fields": [
+      {
+        "name": "CupSize",
+        "type": "float2",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "CountSize",
+        "type": "float2",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SpawnSize",
+        "type": "float2",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SpawnCenter",
+        "type": "float3",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "RiceCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SandCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "GrainCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "TopTierCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "BottomTierCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "CutlineY",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 10,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float2",
+      "float3",
+      "int",
+      "float",
+      "UnityEngine",
+      "Unity",
+      "Entities",
+      "Mathematics",
+      "Bake",
+      "GetEntity",
+      "TransformUsageFlags",
+      "Dynamic",
+      "GetChild",
+      "AddComponent",
+      "CountSize",
+      "SpawnSize",
+      "CupSize",
+      "SpawnCenter",
+      "RiceCount",
+      "SandCount",
+      "GrainCount",
+      "IComponentData",
+      "TopTierCount",
+      "BottomTierCount",
+      "CutlineY"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      2
+    ],
+    "guessed_roles": [
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트"
+    ]
+  },
+  {
+    "file_id": "SsalEntityData.cs",
+    "path": "SsalEntityData.cs",
+    "file_name": "SsalEntityData.cs",
+    "content_hash": "4be807bcc7d072faaffc54e5b3948fc5cb1ea4ff",
+    "size": 285,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "SsalEntityData",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SsalEntityData",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime",
+      "data"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재"
+    ]
+  },
+  {
+    "file_id": "SSALIcon.cs",
+    "path": "SSALIcon.cs",
+    "file_name": "SSALIcon.cs",
+    "content_hash": "7ca6546dbb6b233e712d54dd3824b3e13fcd05fb",
+    "size": 2660,
+    "line_count": 70,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.InputSystem"
+    ],
+    "classes": [
+      {
+        "name": "SSALIcon",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SSALIcon",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Update",
+      "Vector3"
+    ],
+    "fields": [
+      {
+        "name": "RiceSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "RiceDropSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "GrainSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "GrainDropSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SandSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SandDropSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "DefaultSprite",
+        "type": "Sprite",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SSALIconObj",
+        "type": "SpriteRenderer",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "SpawnerArea",
+        "type": "GameObject",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_previousX",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_tiltSensitivity",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_maxTiltAngle",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_smoothTime",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "targetZ",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "isPressed",
+        "type": "bool",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 9,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Sprite",
+      "SpriteRenderer",
+      "float",
+      "bool",
+      "UnityEngine",
+      "InputSystem",
+      "RiceSprite",
+      "RiceDropSprite",
+      "GrainSprite",
+      "GrainDropSprite",
+      "SandSprite",
+      "SandDropSprite",
+      "DefaultSprite",
+      "SSALIconObj",
+      "SpawnerArea",
+      "Update",
+      "Vector2",
+      "Mouse",
+      "ReadValue",
+      "Vector3",
+      "Camera",
+      "ScreenToWorldPoint",
+      "SpawnerManager",
+      "Instance",
+      "CurrentMode",
+      "SSALMode",
+      "Default",
+      "Clamp",
+      "Quaternion",
+      "Euler",
+      "Lerp",
+      "Color",
+      "Rice",
+      "Sand",
+      "Grain"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Vector3"
+    ],
+    "singleton_access_types": [
+      "SpawnerManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      5,
+      40,
+      15,
+      10,
+      2
+    ],
+    "guessed_roles": [
+      "manager",
+      "runtime",
+      "player",
+      "ui",
+      "combat"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "UI 관련 로직 포함",
+      "전투 계열 로직 포함"
+    ]
+  },
+  {
+    "file_id": "SSALTypeAuthoring.cs",
+    "path": "SSALTypeAuthoring.cs",
+    "file_name": "SSALTypeAuthoring.cs",
+    "content_hash": "e1f9f1812b3f822769900ad3edbc62a02954d581",
+    "size": 449,
+    "line_count": 19,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "Unity.Entities"
+    ],
+    "classes": [
+      {
+        "name": "SSALTypeAuthoring",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "Baker",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "Baker"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SSALTypeAuthoring",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Bake"
+    ],
+    "fields": [
+      {
+        "name": "Type",
+        "type": "SSALMode",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 1,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "SSALMode",
+      "UnityEngine",
+      "Unity",
+      "Entities",
+      "Type",
+      "Bake",
+      "GetEntity",
+      "TransformUsageFlags",
+      "None",
+      "AddComponent",
+      "SSALType"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트"
+    ]
+  },
+  {
+    "file_id": "TitleMoveEffect.cs",
+    "path": "TitleMoveEffect.cs",
+    "file_name": "TitleMoveEffect.cs",
+    "content_hash": "551ce96a75b7258d36a10e2d2051e0d4d794540f",
+    "size": 2160,
+    "line_count": 77,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "DG.Tweening",
+      "UnityEngine.InputSystem"
+    ],
+    "classes": [
+      {
+        "name": "TitleMoveEffect",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "TitleMoveEffect",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Awake",
+      "Start",
+      "Update",
+      "StartFloating",
+      "Vector2",
+      "MoveToTarget"
+    ],
+    "fields": [
+      {
+        "name": "rectTransform",
+        "type": "RectTransform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "currentSequence",
+        "type": "Sequence",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "isClicked",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "startScale",
+        "type": "Vector3",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake",
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "RectTransform",
+      "Sequence",
+      "bool",
+      "Vector3",
+      "UnityEngine",
+      "DG",
+      "Tweening",
+      "InputSystem",
+      "Vector2",
+      "CanvasGroup",
+      "Awake",
+      "GetComponent",
+      "Start",
+      "StartFloating",
+      "Update",
+      "Mouse",
+      "IsPressed",
+      "MoveToTarget",
+      "Kill",
+      "DOTween",
+      "Append",
+      "DOAnchorPos",
+      "SetEase",
+      "Ease",
+      "InOutSine",
+      "SetLoops",
+      "Join",
+      "OutQuint",
+      "DOScale",
+      "DOFade",
+      "OnComplete"
+    ],
+    "component_access_types": [
+      "RectTransform"
+    ],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      2,
+      40,
+      0.5,
+      0,
+      1
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "player",
+      "save-load",
+      "data"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "UITriggerSystem.cs",
+    "path": "UITriggerSystem.cs",
+    "file_name": "UITriggerSystem.cs",
+    "content_hash": "005517ac64315917ef30714f60603d76431cc0b7",
+    "size": 486,
+    "line_count": 18,
+    "namespace": "",
+    "using_list": [
+      "Unity.Entities"
+    ],
+    "classes": [
+      {
+        "name": "UITriggerSystem",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "SystemBase"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": true,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "UITriggerSystem",
+    "unity_type": "None",
+    "methods": [
+      "OnUpdate",
+      "EntityCommandBuffer"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Unity",
+      "Entities",
+      "SystemBase",
+      "OnUpdate",
+      "EntityCommandBuffer",
+      "Collections",
+      "Allocator",
+      "Temp",
+      "SystemAPI",
+      "Query",
+      "RefRO",
+      "TriggerUITag",
+      "WithEntityAccess",
+      "SSALManager",
+      "Instance",
+      "SetSubmitUI",
+      "RemoveComponent",
+      "Playback",
+      "EntityManager",
+      "Dispose"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "EntityCommandBuffer"
+    ],
+    "singleton_access_types": [
+      "SSALManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "manager",
+      "ui",
+      "player",
+      "runtime"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
+    ]
+  }
+]

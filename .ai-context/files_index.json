@@ -3016,6 +3016,357 @@
     ]
   },
   {
+    "file_id": "StageManager.cs",
+    "path": "StageManager.cs",
+    "file_name": "StageManager.cs",
+    "content_hash": "6c56716a3b182f0eb6485112cb1e1d10ae2b9073",
+    "size": 10173,
+    "line_count": 327,
+    "namespace": "",
+    "using_list": [
+      "Sirenix.OdinInspector.Editor.GettingStarted",
+      "System",
+      "System.Collections",
+      "System.Collections.Concurrent",
+      "System.Collections.Generic",
+      "System.Linq",
+      "Unity.Transforms",
+      "UnityEngine",
+      "UnityEngine.SceneManagement"
+    ],
+    "classes": [
+      {
+        "name": "GameData",
+        "kind": "class",
+        "access": "public",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "ListExtensions",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "StageManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GameData",
+    "unity_type": "None",
+    "methods": [
+      "Awake",
+      "OnEnable",
+      "OnDisable",
+      "Start",
+      "WaitUntil",
+      "Tutorial",
+      "StartGame",
+      "Distribution",
+      "TimeCounter",
+      "WaitForSeconds",
+      "OnTimeOut",
+      "ShowResults",
+      "ScoreJudge",
+      "SortSoldier",
+      "MoveStageD",
+      "SetSoldiersName"
+    ],
+    "fields": [
+      {
+        "name": "stageTime",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "currentComplainScore",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "currentStage",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "curSoldierIdx",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "expectedVisitNum",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "isGiveEnd",
+        "type": "bool",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "cpScore",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "failureCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "successCount",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "Gold",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "temp",
+        "type": "T",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "timeoutAction",
+        "type": "Action",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "data",
+        "type": "GameData",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "timeCoroutine",
+        "type": "Coroutine",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "distributeCoroutine",
+        "type": "Coroutine",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "maxIdx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "tick",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "maxidx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "curidx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake",
+      "OnEnable",
+      "OnDisable",
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": true,
+    "has_on_enable": true,
+    "has_on_disable": true,
+    "serialize_field_count": 0,
+    "public_field_count": 12,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 3,
+    "coroutine_count": 5,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "float",
+      "int",
+      "bool",
+      "Coroutine",
+      "Sirenix",
+      "OdinInspector",
+      "Editor",
+      "GettingStarted",
+      "System",
+      "Collections",
+      "Concurrent",
+      "Generic",
+      "Linq",
+      "Unity",
+      "Transforms",
+      "UnityEngine",
+      "SceneManagement",
+      "SoldierType",
+      "Default",
+      "Gold",
+      "SoldierNames",
+      "Shuffle",
+      "Length",
+      "Count",
+      "Swap",
+      "Singleton",
+      "StageData_SoldierData",
+      "StageDics",
+      "StageData_SoldierScaleData",
+      "CpScoreAmountDics",
+      "Awake",
+      "SheetDataUtil",
+      "DicByKey",
+      "StageData",
+      "SoldierData",
+      "SoldierScaleData",
+      "MoveStageD",
+      "OnEnable",
+      "OnTimeOut",
+      "OnDisable",
+      "Start",
+      "WaitUntil",
+      "UIManager",
+      "IsReady",
+      "Show",
+      "UIDefault",
+      "StartGame",
+      "Tutorial",
+      "Distribution",
+      "SSALManager",
+      "Instance",
+      "Active",
+      "SortSoldier",
+      "SetSoldiersName",
+      "SetSSALCnt",
+      "Get",
+      "Init",
+      "StartCoroutine",
+      "TimeCounter",
+      "AddScore",
+      "Log",
+      "SetComplainSldr",
+      "StopCoroutine",
+      "ShowResults",
+      "UI",
+      "SetClock",
+      "WaitForSeconds",
+      "Invoke",
+      "CPScoreAmount",
+      "BadScale",
+      "SceneManager",
+      "LoadScene",
+      "ResultScene",
+      "UIResult",
+      "ScoreJudge",
+      "Add",
+      "NameManager",
+      "ClearNames",
+      "GenerateName"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "WaitUntil",
+      "WaitForSeconds"
+    ],
+    "singleton_access_types": [
+      "SSALManager",
+      "NameManager"
+    ],
+    "string_literals": [
+      "����Ƚ�� : {data.failureCount} / ����Ƚ�� : {data.successCount}",
+      "ResultScene"
+    ],
+    "numeric_literals": [
+      600,
+      30,
+      180,
+      100,
+      0.2,
+      0,
+      5,
+      5,
+      3,
+      6,
+      2,
+      7,
+      4
+    ],
+    "guessed_roles": [
+      "scene",
+      "manager",
+      "runtime",
+      "ui",
+      "player"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TitleMoveEffect.cs",
     "path": "TitleMoveEffect.cs",
     "file_name": "TitleMoveEffect.cs",

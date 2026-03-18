@@ -6,6 +6,7 @@
   "added_cs_files": 0,
   "deleted_cs_files": 0,
   "rebuild_reasons": [
-    "기존 .ai-context가 없음"
+    "force_rebuild=true",
+    "build_mode=full"
   ]
 }

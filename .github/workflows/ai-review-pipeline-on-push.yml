@@ -1,0 +1,46 @@
+name: AI Review Pipeline On Push
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - develop
+
+permissions:
+  contents: write
+
+jobs:
+  build-context:
+    if: github.actor != 'github-actions[bot]' && !contains(github.event.head_commit.message, '[skip ai-context]')
+    uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-build-project-context.yml@main
+    with:
+      target_branches: '["main","dev","develop"]'
+      build_mode: "auto"
+      force_rebuild: false
+      context_dir: ".ai-context"
+      full_rebuild_changed_files_threshold: 15
+      full_rebuild_new_files_threshold: 8
+      commit_context_files: true
+
+  push-feedback:
+    if: github.actor != 'github-actions[bot]' && !contains(github.event.head_commit.message, '[skip ai-context]')
+    needs: build-context
+    uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-push-feedback.yml@main
+    with:
+      target_branches: '["main","dev","develop"]'
+      max_files: 10
+      max_patch_chars: 4000
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+  merge-summary:
+    if: github.actor != 'github-actions[bot]' && !contains(github.event.head_commit.message, '[skip ai-context]')
+    needs: build-context
+    uses: ExP-RookieChallenge-26-1/club-automation/.github/workflows/ai-merge-summary.yml@main
+    with:
+      target_branches: '["main","dev","develop"]'
+      max_files: 10
+      max_patch_chars: 4000
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

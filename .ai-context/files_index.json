@@ -1290,6 +1290,222 @@
     "summary_signals": []
   },
   {
+    "file_id": "LoadingSceneManager.cs",
+    "path": "LoadingSceneManager.cs",
+    "file_name": "LoadingSceneManager.cs",
+    "content_hash": "f73f51fda1e6bdea74002bf608403668588ddcba",
+    "size": 3182,
+    "line_count": 121,
+    "namespace": "",
+    "using_list": [
+      "DG.Tweening",
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine",
+      "UnityEngine.SceneManagement",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "LoadingSceneManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      },
+      {
+        "name": "UIPhaseData",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "LoadingSceneManager",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "LoadSceneProcess",
+      "Awake",
+      "ExecuteNextPhase",
+      "RunFadeInOut",
+      "RunOverlayTransition",
+      "Vector2"
+    ],
+    "fields": [
+      {
+        "name": "Content",
+        "type": "CanvasGroup",
+        "access": "public",
+        "serialized": true,
+        "is_static": false
+      },
+      {
+        "name": "timer",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "break",
+        "type": "yield",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "targetRT",
+        "type": "RectTransform",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "canvasGroup",
+        "type": "CanvasGroup",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "customScale",
+        "type": "Vector3",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "duration",
+        "type": "float",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "currentIdx",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "overlayStartPos",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "data",
+        "type": "UIPhaseData",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 1,
+    "public_field_count": 5,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 2,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "CanvasGroup",
+      "float",
+      "RectTransform",
+      "Vector3",
+      "int",
+      "Vector2",
+      "DG",
+      "Tweening",
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "SceneManagement",
+      "UI",
+      "Content",
+      "Start",
+      "StartCoroutine",
+      "LoadSceneProcess",
+      "ExecuteNextPhase",
+      "AsyncOperation",
+      "SceneManager",
+      "LoadSceneAsync",
+      "Serializable",
+      "Transition",
+      "Settings",
+      "Awake",
+      "Count",
+      "RunFadeInOut",
+      "RunOverlayTransition",
+      "Sequence",
+      "DOTween",
+      "Append",
+      "DOFade",
+      "AppendInterval",
+      "OnComplete",
+      "DOAnchorPos",
+      "SetEase",
+      "Ease",
+      "Linear"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "--- Transition Settings ---"
+    ],
+    "numeric_literals": [
+      3,
+      0,
+      0.9,
+      2000,
+      5,
+      1,
+      0.5
+    ],
+    "guessed_roles": [
+      "ui",
+      "scene",
+      "runtime",
+      "save-load",
+      "manager"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "MeleeHandLogic.cs",
     "path": "MeleeHandLogic.cs",
     "file_name": "MeleeHandLogic.cs",

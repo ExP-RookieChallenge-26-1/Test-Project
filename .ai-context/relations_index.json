@@ -4571,6 +4571,594 @@
     "strength": 1
   },
   {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "WaitForSeconds",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "WaitUntil",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Singleton",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "NameManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SSALManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Active",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Add",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "AddScore",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "BadScale",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "ClearNames",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Concurrent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Coroutine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Count",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "CPScoreAmount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "CpScoreAmountDics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Default",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "DicByKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Distribution",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Editor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "GenerateName",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Get",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "GettingStarted",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Gold",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Init",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Invoke",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "IsReady",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Length",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Linq",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "LoadScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Log",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "MoveStageD",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "NameManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "OdinInspector",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "OnDisable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "OnEnable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "OnTimeOut",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "ResultScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SceneManagement",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SceneManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "ScoreJudge",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SetClock",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SetComplainSldr",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SetSoldiersName",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SetSSALCnt",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SheetDataUtil",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Show",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "ShowResults",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Shuffle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Singleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Sirenix",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SoldierData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SoldierNames",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SoldierScaleData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SoldierType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SortSoldier",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "SSALManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StageData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StageData_SoldierData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StageData_SoldierScaleData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StageDics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StartCoroutine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StartGame",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "StopCoroutine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Swap",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "TimeCounter",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Transforms",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Tutorial",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "UIDefault",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "UIManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "UIResult",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "WaitForSeconds",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "StageManager.cs",
+    "from_class": "GameData",
+    "to_type": "WaitUntil",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TitleMoveEffect.cs",
     "from_class": "TitleMoveEffect",
     "to_type": "RectTransform",

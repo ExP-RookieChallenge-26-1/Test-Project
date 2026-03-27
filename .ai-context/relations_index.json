@@ -1878,7 +1878,7 @@
   {
     "from_file": "Head.cs",
     "from_class": "Head",
-    "to_type": "InitObj",
+    "to_type": "InitObj123",
     "relation_type": "uses",
     "strength": 1
   },

@@ -1111,8 +1111,8 @@
     "file_id": "Head.cs",
     "path": "Head.cs",
     "file_name": "Head.cs",
-    "content_hash": "222822db9e460ea188874df5f48f6993e8242300",
-    "size": 800,
+    "content_hash": "0992a898ecde712be561bedb5e2b01b5faa83ee7",
+    "size": 806,
     "line_count": 39,
     "namespace": "",
     "using_list": [
@@ -1143,7 +1143,7 @@
     "methods": [
       "OnNotify",
       "Init",
-      "InitObj",
+      "InitObj123",
       "HeadSet"
     ],
     "fields": [
@@ -1207,7 +1207,7 @@
       "HeadAction",
       "OnNotify",
       "Init",
-      "InitObj",
+      "InitObj123",
       "HeadSet",
       "FindWithTag",
       "Player",

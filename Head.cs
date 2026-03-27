@@ -20,11 +20,11 @@ public class Head : IObserver
 
     public void Init()
     {
-        InitObj();
+        InitObj333();
         HeadAction = HeadSet;
     }
 
-    public void InitObj()
+    public void InitObj333()
     {
         _player = GameObject.FindWithTag("Player");
         _headObj = _player.transform.Find("Head").gameObject;

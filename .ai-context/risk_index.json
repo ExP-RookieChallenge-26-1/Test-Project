@@ -335,6 +335,17 @@
     "risk_score": 8
   },
   {
+    "file_id": "NameManager.cs",
+    "class_name": "NameManager",
+    "risk_flags": [
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 8
+  },
+  {
     "file_id": "SSALTypeAuthoring.cs",
     "class_name": "SSALTypeAuthoring",
     "risk_flags": [

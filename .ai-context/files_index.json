@@ -1111,8 +1111,8 @@
     "file_id": "Head.cs",
     "path": "Head.cs",
     "file_name": "Head.cs",
-    "content_hash": "222822db9e460ea188874df5f48f6993e8242300",
-    "size": 800,
+    "content_hash": "0992a898ecde712be561bedb5e2b01b5faa83ee7",
+    "size": 806,
     "line_count": 39,
     "namespace": "",
     "using_list": [
@@ -1143,7 +1143,7 @@
     "methods": [
       "OnNotify",
       "Init",
-      "InitObj",
+      "InitObj123",
       "HeadSet"
     ],
     "fields": [
@@ -1207,7 +1207,7 @@
       "HeadAction",
       "OnNotify",
       "Init",
-      "InitObj",
+      "InitObj123",
       "HeadSet",
       "FindWithTag",
       "Player",
@@ -1740,6 +1740,129 @@
     ],
     "guessed_roles": [
       "player"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "NameManager.cs",
+    "path": "NameManager.cs",
+    "file_name": "NameManager.cs",
+    "content_hash": "1b0aa166edfde310109d54e418401d1b72ca572e",
+    "size": 1509,
+    "line_count": 40,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "System.Collections.Generic"
+    ],
+    "classes": [
+      {
+        "name": "NameManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "NameManager",
+    "unity_type": "None",
+    "methods": [
+      "GenerateName",
+      "ClearNames"
+    ],
+    "fields": [
+      {
+        "name": "middleName",
+        "type": "string",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "lastName",
+        "type": "string",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "newName",
+        "type": "string",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 4,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "string",
+      "System",
+      "Collections",
+      "Generic",
+      "Singleton",
+      "Start",
+      "Update",
+      "GenerateName",
+      "UnityEngine",
+      "Count",
+      "Contains",
+      "Add",
+      "ClearNames",
+      "Clear"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "List"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "김",
+      "이",
+      "박",
+      "최",
+      "정",
+      "강",
+      "조",
+      "윤",
+      "장",
+      "임",
+      "오",
+      "남궁",
+      "황",
+      "안",
+      "송",
+      "서",
+      "권",
+      "홍",
+      "곽",
+      "신"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime",
+      "manager"
     ],
     "summary_signals": []
   },

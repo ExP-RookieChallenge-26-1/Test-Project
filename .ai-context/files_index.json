@@ -72,6 +72,173 @@
     ]
   },
   {
+    "file_id": "CellMaker.cs",
+    "path": "CellMaker.cs",
+    "file_name": "CellMaker.cs",
+    "content_hash": "0858554e39b089b4aec2e10517f87e611751789e",
+    "size": 7387,
+    "line_count": 198,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "CellMaker",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "CellMaker",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Vector2Int",
+      "Start",
+      "Vector3",
+      "GetAroundMineCount",
+      "OpenCell",
+      "RemoveCover",
+      "IsOpened",
+      "IsMine",
+      "IsInRange"
+    ],
+    "fields": [
+      {
+        "name": "mapMaker",
+        "type": "MapMaker",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "inGameLogic",
+        "type": "InGameLogic",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "Cells",
+        "type": "Cell[,]",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "Covers",
+        "type": "Cover[,]",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "count",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 4,
+    "get_component_count": 2,
+    "find_call_count": 0,
+    "new_keyword_count": 4,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "MapMaker",
+      "InGameLogic",
+      "Cell[,]",
+      "Cover[,]",
+      "int",
+      "UnityEngine",
+      "MapMakor",
+      "Cell",
+      "Cover",
+      "Vector2Int",
+      "MapSize",
+      "Cells",
+      "Covers",
+      "Start",
+      "MakeMap",
+      "Vector3",
+      "Instantiate",
+      "Quaternion",
+      "GetComponent",
+      "Map",
+      "Type",
+      "Mine",
+      "SetText",
+      "GetAroundMineCount",
+      "ToString",
+      "Init",
+      "OpenCell",
+      "RemoveCover",
+      "Destroy",
+      "IsOpened",
+      "IsMine",
+      "IsInRange"
+    ],
+    "component_access_types": [
+      "Cell",
+      "Cover"
+    ],
+    "created_types": [
+      "Vector2Int",
+      "Vector3"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "ȭ�鿡 ���̴� ������Ʈ ���� �� ����",
+      "M",
+      "centerX",
+      "centerY",
+      "x",
+      "y",
+      "coverObject"
+    ],
+    "numeric_literals": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      0.5,
+      8
+    ],
+    "guessed_roles": [
+      "runtime",
+      "player",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
     "file_id": "Character.cs",
     "path": "Character.cs",
     "file_name": "Character.cs",
